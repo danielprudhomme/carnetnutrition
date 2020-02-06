@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarnetNutrition.App", "CarnetNutrition.App\CarnetNutrition.App.csproj", "{933DC422-95DD-4221-BD36-DE2CA17AA157}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CarnetNutrition.Database", "CarnetNutrition.Database\CarnetNutrition.Database.sqlproj", "{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{933DC422-95DD-4221-BD36-DE2CA17AA157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933DC422-95DD-4221-BD36-DE2CA17AA157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933DC422-95DD-4221-BD36-DE2CA17AA157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933DC422-95DD-4221-BD36-DE2CA17AA157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6DD46F-C2D4-4654-A9FD-352155A5E7C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D09A0BF8-2BF8-45CE-9ECB-38919208D556}
+	EndGlobalSection
+EndGlobal
