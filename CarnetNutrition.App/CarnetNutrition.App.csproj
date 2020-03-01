@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BlazorInputFile" Version="0.1.0-preview-00002" />
+    <PackageReference Include="DevExpress.Blazor" Version="19.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarnetNutrition.Core\CarnetNutrition.Core.csproj" />
+    <ProjectReference Include="..\CarnetNutrition.DAL\CarnetNutrition.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

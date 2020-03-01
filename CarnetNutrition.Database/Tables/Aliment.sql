@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Aliment]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Label] VARCHAR(50) NULL
+)

@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CarnetNutrition.App.Data;
+using CarnetNutrition.Core.Contracts.Repositories;
+using CarnetNutrition.DAL.Repositories;
+using CarnetNutrition.Core.Contracts.Services;
+using CarnetNutrition.Core.Services;
 
 namespace CarnetNutrition.App
 {
@@ -29,6 +33,15 @@ namespace CarnetNutrition.App
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+
+            // Repositories
+            services.AddScoped<IAlimentCategoryRepository, AlimentCategoryRepository>();
+            services.AddScoped<IAlimentRepository, AlimentRepository>();
+            services.AddScoped<INutritionalValueRepository, NutritionalValueRepository>();
+
+            // Services
+            services.AddScoped<IImportCiqualExcelService, ImportCiqualExcelService>();
+            services.AddScoped<ISeedService, SeedService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

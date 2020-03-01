@@ -56,9 +56,28 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="StoredProcedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Aliment.sql" />
-    <Build Include="AlimentCategory.sql" />
+    <Build Include="Tables\Aliment.sql" />
+    <Build Include="StoredProcedures\GetAllAliment.sql" />
+    <Build Include="StoredProcedures\InsertAliment.sql" />
+    <Build Include="Tables\AlimentAlimentCategory.sql" />
+    <Build Include="StoredProcedures\InsertAlimentCategoryToAliment.sql" />
+    <Build Include="StoredProcedures\InsertAlimentCategory.sql" />
+    <Build Include="StoredProcedures\InsertNutritionalValue.sql" />
+    <Build Include="StoredProcedures\GetAllAlimentCategory.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CarnetNutrition.Database.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\AlimentCategory.sql" />
+    <Build Include="Tables\NutritionalInfo.sql" />
+    <Build Include="Tables\NutritionalValue.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="CarnetNutrition.Database.refactorlog" />
   </ItemGroup>
 </Project>

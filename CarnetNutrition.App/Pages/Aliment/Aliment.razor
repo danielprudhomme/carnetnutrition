@@ -1,0 +1,29 @@
+﻿@page "/aliment"
+
+@using System.IO
+
+@inject IImportCiqualExcelService ImportService
+
+aliments :
+
+<InputFile OnChange="HandleSelection" />
+
+<p>@status</p>
+
+@code {
+    string status;
+
+    async Task HandleSelection(IFileListEntry[] files)
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            var ms = new MemoryStream();
+            await file.Data.CopyToAsync(ms);
+
+            await ImportService.Import(ms);
+
+            status = $"Finished loading {file.Size} bytes from {file.Name}";
+        }
+    }
+}
